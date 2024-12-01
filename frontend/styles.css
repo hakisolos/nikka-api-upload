@@ -1,1 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.upload-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-area {
+  border: 2px dashed #007bff;
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-area:hover {
+  background-color: #f1f1f1;
+}
+
+.upload-area p {
+  color: #007bff;
+  font-size: 1.2em;
+}
+
+.browse-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-input {
+  display: none;
+}
+
+#progress-container {
+  display: none;
+  margin-top: 20px;
+}
+
+.progress-container {
+  position: relative;
+}
+
+.progress-bar {
+  height: 5px;
+  background-color: #007bff;
+  width: 0;
+  border-radius: 5px;
+}
+
+#progress-text {
+  margin-top: 5px;
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+.file-url-container {
+  display: none;
+  margin-top: 20px;
+}
+
+.file-url-container p {
+  font-size: 1.2em;
+}
+
+#file-url {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
